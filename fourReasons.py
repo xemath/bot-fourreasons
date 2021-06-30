@@ -44,10 +44,10 @@ def main(array):
         if array[indexArray][0] == "Color Mask Champagne" or array[indexArray][3]=="-":
             indexArray = indexArray + 1
             continue
-        driver = webdriver.Chrome(executable_path=r'C:\chromedriver.exe')
-        #changeProxy(arrayEmails[indexArrayEmail][11])
+        #driver = webdriver.Chrome(executable_path=r'C:\chromedriver.exe')
+        changeProxy(arrayEmails[indexArrayEmail][11])
         time.sleep(1)
-        #driver = launch(arrayEmails[indexEmailsGoogle][0])
+        driver = launch(arrayEmails[indexEmailsGoogle][0])
         print(array[indexArray][0])
         driver.get('https://www.fourreasons.us/')
         driver.maximize_window()
