@@ -129,7 +129,9 @@ def main(array):
             productsCount = productsCount + 1
             indexArrayEmail = indexArrayEmail + 1
             indexEmailsGoogle = indexEmailsGoogle + 1
-            indexArray = indexArray + 1
+            if productsCount == int(array[indexArray][3]):
+                productsCount = 0
+                indexArray = indexArray + 1 
             driver.quit()
             continue
         #finaliza entrada de datos
